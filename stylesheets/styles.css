@@ -1,0 +1,20 @@
+.ui.top.menu .ui.container {
+	padding-right: 12%; 
+}
+
+.ui.main.text.container {
+	margin-top: 6.0em;
+}
+
+#bio-short {
+	/*display: inline;*/
+	padding: 3% 0 3% 0;
+}
+
+/*#menu {*/
+	/*display: none;*/
+/*}*/
+li{
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
