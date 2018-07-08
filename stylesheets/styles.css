@@ -19,6 +19,6 @@ li{
 	padding-bottom: 0.5%;
 }
 
-.ui.fitted.menu .item {
+.ui.fitted.menu .item, .ui.fitted.menu .item .menu .item, .ui.menu .fitted.item{
 	padding: 2%;
 }
