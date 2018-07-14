@@ -1,18 +1,21 @@
-#my-menu a{
-	padding: 2%;
-}
+/*#my-menu a{*/
+	/*padding: 2%;*/
+/*}*/
 
 /*.ui.fitted.menu .item, .ui.fitted.menu .item .menu .item, .ui.menu .fitted.item{*/
 	/*padding: 2em;*/
 /*}*/
 
-.ui.top.menu .ui.container {
-	padding-right: 12%; 
-}
+/*.ui.top.menu .ui.container {*/
+	/*padding-left: 5%;*/
+	/*padding-right: 5%;*/
+/*}*/
+
 
 .ui.main.text.container {
 	margin-top: 6.0em;
 }
+
 
 #bio-short {
 	/*display: inline;*/
