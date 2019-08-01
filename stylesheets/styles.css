@@ -17,6 +17,7 @@
 }
 
 
+
 #bio-short {
 	/*display: inline;*/
 	padding: 3% 0 3% 0;
@@ -31,3 +32,46 @@ li{
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
 }
+
+
+.nd-pageheader {
+	padding: 2rem 15px;
+	margin-bottom: -3%;
+	color: #e4f1fe;
+	text-align: center;
+	background-color: #0E2863;
+}
+
+.nd-pageheader a {
+	color: #e4f1fe;
+}
+
+.nd-pageheader .container {
+	position: relative
+}
+
+.nd-pageheader h1 {
+	font-size: 3rem;
+	font-weight: 400;
+	color: #fff
+}
+
+.nd-pageheader address {
+	margin-top: 2%;
+	font-weight: 300;
+	font-size: 1.2rem;
+}
+
+.nd-pageheader p {
+	margin-bottom: 0;
+	font-size: 2rem;
+	font-weight: 300
+}
+
+
+
+
+
+
+
+
