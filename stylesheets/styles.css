@@ -16,7 +16,9 @@
 	margin-top: 6.0em;
 }
 
-
+.ui.circular.image{
+	margin-top: -10%;
+}
 
 #bio-short {
 	/*display: inline;*/
