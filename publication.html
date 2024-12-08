@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes"
-          name="viewport">
-    <meta charset="utf-8">
-    <title>Xiang Yue's Homepage</title>
-    <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.css">
-    <script src="./stylesheets/jquery.js"></script>
-    <script src="./stylesheets/semantic.js"></script>
-</head>
+    <head>
+        <meta content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes"
+              name="viewport">
+        <meta charset="utf-8">
+        <title>Xiang Yue's Homepage</title>
+        <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+        <link rel="manifest" href="images/icon/site.webmanifest">
+        <script src="./stylesheets/jquery.js"></script>
+        <script src="./stylesheets/semantic.js"></script>
+    </head>
 <body>
 
 <!-- header -->
 <div class="ui fixed inverted menu">
     <div class="ui container">
-        <a href="index.html" class="header item">Xiang Yue</a>
+        <a href="index.html" class="description item">Home</a>
         <a href="publication.html" class="item">Publications</a>
+        <a href="talk.html" class="item">Talks</a>
+        <a href="teaching.html" class="item">Teaching</a>
     </div>
 </div>
 		<div class="ui main text container">
-            <div class="ui huge header">Highlighted Publications</div>
+            <div class="ui huge header">Selected Publications</div>
             Full list: <a href="https://scholar.google.com/citations?hl=en&user=4jX_dI8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">(Google
             Scholar)</a>,
             <a href="https://www.semanticscholar.org/author/Xiang-Yue/145548079" target="_blank">(Semantic Scholar)</a>
@@ -31,7 +37,8 @@
                     <p>*: Equal Contributions; ✝: My Advisee</p>
                     <ul>
                         <li>
-                            <p style="background-color: #FFFFE0; padding: 10px; border-radius: 5px;">
+                            <p>
+                                <p>
                                 <a href="https://arxiv.org/abs/2410.16153" target="_blank">Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages</a><br>
                                 <b><u>Xiang Yue*</u></b>, Yueqi Song*, Akari Asai, Seungone Kim, Jean de Dieu Nyandwi, Simran Khanuja, Anjali Kantharuban, Lintang Sutawika, Sathyanarayanan Ramamoorthy, Graham Neubig<br>
                                 <i>arXiv 2024</i><br>
@@ -64,11 +71,26 @@
                                 <a href="https://github.com/OSU-NLP-Group/GrokkedTransformer" target="_blank"><img src="https://img.shields.io/github/stars/OSU-NLP-Group/GrokkedTransformer?style=social" alt="GitHub stars"></a>
                             </p>
                         </li>
-                        
+                        <li>
+                            <p>
+                                <!-- MMLU-Pro -->
+                                <a href="https://arxiv.org/pdf/2406.01574" target="_blank">MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark
+                                </a><br>
+                                Yubo Wang, Xueguang Ma, Ge Zhang, Yuansheng Ni, Abhranil Chandra, Shiguang Guo, Weiming Ren, Aaran Arulraj, Xuan He, Ziyan Jiang, Tianle Li, Max Ku, Kai Wang, Alex Zhuang, Rongqi Fan, <b><u>Xiang Yue</u></b>, Wenhu Chen
+                                <br>
+                                <i>NeurIPS 2024 (<span style="color: #C0392B; font-weight: bold;">Spotlight</span>)</i><br>
+                                <a href="https://huggingface.co/spaces/TIGER-Lab/MMLU-Pro" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Leaderboard-FFFFFF" alt="Leaderboard on HF"></a>
+                                <a href="https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF"></a>
+                                <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/" target="_blank"><img src="https://img.shields.io/github/stars/TIGER-AI-Lab/MMLU-Pro?style=social" alt="GitHub stars"></a>
+                                
+                            </p>
+                        </li>
                         <li>
                             <p>
                                 <a href="https://arxiv.org/abs/2406.06565" target="_blank">MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures</a><br>
-                                Jinjie Ni, Fuzhao Xue, <b><u>Xiang Yue</u></b>, Yuntian Deng, Mahir Shah, Kabir Jain, Graham Neubig, Yang You<br>
+                                Jinjie Ni#, Fuzhao Xu#, <b><u>Xiang Yue#</u></b>, Yuntian Deng, Mahir Shah, Kabir Jain, Graham Neubig, Yang You
+                                (#: Core Contributor)
+                                <br>
                                 <i>NeurIPS 2024</i><br>
                                 <a href="https://mixeval.github.io/" target="_blank"><img src="https://img.shields.io/badge/🔗%20Project%20Page-FFFFFF" alt="Project Page"></a>
                                 <a href="https://huggingface.co/datasets/MixEval/MixEval" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF"></a>
@@ -154,7 +176,7 @@
                         </li> -->
                         
                         <li>
-                            <p>
+                            <p style="background-color: #FFFFE0; padding: 10px; border-radius: 5px;">
                                 <a href="https://arxiv.org/abs/2210.14348" target="_blank">Synthetic Text Generation with Differential Privacy: A Simple and Practical Recipe</a><br>
                                 <b><u>Xiang Yue</u></b>, Huseyin A. Inan, Xuechen Li, Girish Kumar, Julia McAnallen, Hoda Shajari, Huan Sun, David Levitan, Robert Sim<br>
                                 <i><b>ACL 2023</b> (<span style="color: #C0392B; font-weight: bold;">🏆 Best Paper Honorable Mention</span>)</i><br>
@@ -171,22 +193,22 @@
                             </p>
                         </li>
                         
-                        <li>
+                        <!-- <li>
                             <p>
                                 <a href="https://arxiv.org/abs/2203.08928" target="_blank">C-MORE: Pretraining to Answer Open-Domain Questions by Consulting Millions of References</a><br>
                                 <b><u>Xiang Yue</u></b>, Xiaoman Pan, Wenlin Yao, Dian Yu, Dong Yu, Jianshu Chen<br>
                                 <i><b>ACL 2022</b></i><br>
                                 <!-- <a href="http://web.cse.ohio-state.edu/~yue.149/C-MORE/data/" target="_blank"><img src="https://img.shields.io/badge/🔗%20Dataset-FFFFFF" alt="Dataset"></a> -->
                                 <!-- <a href="https://github.com/xiangyue9607/C-MORE" target="_blank"><img src="https://img.shields.io/github/stars/xiangyue9607/C-MORE?style=social" alt="GitHub stars"></a> -->
-                            </p>
-                        </li>
+                            <!-- </p> -->
+                        <!-- </li> -->
                         
                         <li>
                             <p>
                                 <a href="https://arxiv.org/abs/2010.16021" target="_blank">CliniQG4QA: Generating Diverse Questions for Domain Adaptation of Clinical Question Answering</a><br>
                                 <b><u>Xiang Yue</u></b>*, Frederick Zhang*, Ziyu Yao, Simon Lin, Huan Sun<br>
                                 <i>IEEE Internatinal Conference on Bioinformatics and Biomedicine 2021 <b>(BIBM 2021)</b></i><br>
-                                <span style="color: #C0392B; font-weight: bold;">🏆 Best Paper (1/727)</span>     <br>                           
+                                <span style="color: #C0392B; font-weight: bold;">🏆 Best Paper (1/727=0.1%)</span>     <br>                           
                                 <a href="pdf/CliniQG4QA-poster.pdf" target="_blank"><img src="https://img.shields.io/badge/📰%20Poster-FFFFFF" alt="Poster Version"></a>
                                 <!-- <a href="https://github.com/sunlab-osu/CliniQG4QA" target="_blank"><img src="https://img.shields.io/github/stars/sunlab-osu/CliniQG4QA?style=social" alt="GitHub stars"></a> -->
                             </p>
@@ -194,15 +216,15 @@
                         
                         
                         
-                        <li>
+                        <!-- <li>
                             <p>
                                 <a href="https://aclanthology.org/2021.findings-acl.337.pdf" target="_blank">Differential Privacy for Text Analytics via Natural Text Sanitization</a><br>
                                 <b><u>Xiang Yue</u></b>*, Minxin Du*, Tianhao Wang, Yaliang Li, Huan Sun and Sherman S. M. Chow<br>
                                 <i><b>ACL 2021, Findings</b></i><br>
                             </p>
-                        </li>
+                        </li> -->
                         
-                        <li>
+                        <!-- <li>
                             <p>
                                 <a href="https://www.aclweb.org/anthology/2020.acl-main.410/" target="_blank">Clinical Reading Comprehension: A Thorough Analysis of the emrQA Dataset</a><br>
                                 <b><u>Xiang Yue</u></b>, Bernal Jimenez Gutierrez and Huan Sun<br>
@@ -210,7 +232,7 @@
                                 <a href="https://slideslive.com/38929136/clinical-reading-comprehension-a-thorough-analysis-of-the-emrqa-dataset" target="_blank"><img src="https://img.shields.io/badge/📽️%20Slides%20&%20Video-FFFFFF" alt="Slides & Video"></a>
                                 <a href="https://github.com/xiangyue9607/CliniRC" target="_blank"><img src="https://img.shields.io/github/stars/xiangyue9607/CliniRC?style=social" alt="GitHub stars"></a>
                             </p>
-                        </li>
+                        </li> -->
                         
 					</ul>
 
