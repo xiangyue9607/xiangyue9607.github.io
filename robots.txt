@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://xiangyue9607.github.io/sitemap.xml
+
+# Disallow crawling of admin or private directories (if any)
+# Disallow: /private/
+
+# Allow all content for academic homepage
