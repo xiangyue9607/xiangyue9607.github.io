@@ -1,119 +1,111 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes"
-              name="viewport">
-        <meta charset="utf-8">
-        <title>Xiang Yue's Homepage</title>
-        <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
-        <link rel="manifest" href="images/icon/site.webmanifest">
-        <script src="./stylesheets/jquery.js"></script>
-        <script src="./stylesheets/semantic.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xiang Yue - Talks">
+    <title>Xiang Yue - Talks</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+    <link rel="manifest" href="images/icon/site.webmanifest">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylesheets/styles.css">
+
+    <style>
+    /* Talks-specific overrides */
+    .talks-list li {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .talks-list li:last-child {
+        border-bottom: none;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+    }
+    </style>
+</head>
 <body>
 
-<!-- description -->
-<div class="ui fixed inverted menu">
-    <div class="ui container">
-        <a href="index.html" class="description item">Home</a>
-        <a href="publication.html" class="item">Publications</a>
-        <a href="talk.html" class="item">Talks</a>
-        <a href="teaching.html" class="item">Teaching</a>
+<nav>
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="publication.html">Papers</a>
     </div>
-</div>
-<div class="ui main text container">
-    <div class="ui huge header">Recent Talks</div>
-    <div class="ui section divider"></div>
-    <div class="ui top attached">
-            <div class="content">
-                <a class="description" href="#">Advancing Multimodal LLM Reasoning: A Road to Open Models, Open Science</a>
-                <div class="meta">
-                    <span>Dec 2024, Invited talk at Bosch Seminar</span>
-                </div>
-            </div>
+</nav>
 
-                <div class="content">
-                    <a class="description" href="#">Advancing LLM Reasoning: A Road to Open Models, Open Science</a>
-                    <div class="meta">
-                        <span>Oct 2024, Invited talk at University of Virginia and George Mason University</span>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <a class="description" href="#">MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark</a>
-                    <div class="meta">
-                        <span>Sep 2024, Invited talk at Cohere AI</span>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <a class="description" href="#">MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark</a>
-                    <div class="meta">
-                        <span>Aug 2024, Invited talk at Twelve AI Labs</span>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <a class="description" href="#">MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark</a>
-                    <div class="meta">
-                        <span>Jun 2024, Invited talk at CVPR 2024 NICE Workshop</span>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <a class="description" href="#">Evaluating and Improving Reasoning Capabilities of Foundation Models</a>
-                    <div class="meta">
-                        <span>Jun 2024, Invited talk at Tencent AI Lab (Seattle)</span>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <a class="description" href="#">OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement</a>
-                    <div class="meta">
-                        <span>Apr 2024, Invited talk at UIUC</span>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <a class="description" href="#">Mathematical Reasoning with LLMs</a>
-                    <div class="meta">
-                        <span>Jan 2024, Invited talk at AI TIME (Online AI Forum organized by Tsinghua University)</span>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <a class="description" href="#">Synthetic Data Generation with Differential Privacy</a>
-                    <div class="meta">
-                        <span>Jun 2023, Invited talk at Microsoft Research Summit</span>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <a class="description" href="#">Language Modeling with Differential Privacy</a>
-                    <div class="meta">
-                        <span>Mar 2023, Invited talk at Workshop on Responsible AI hosted by OSU TDAI and University of Tsukuba’s Center for AI Research (C-AIR)</span>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <a class="description" href="#">LLMs with Privacy</a>
-                    <div class="meta">
-                        <span>Mar 2023, Invited talk at AI TIME (Online AI Forum organized by Tsinghua University)</span>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <a class="description" href="#">Data Synthesis: Boosting Utility and Privacy in NLP</a>
-                    <div class="meta">
-                        <span>Dec 2022, Invited talk at ByteDance</span>
-                    </div>
-                </div>
-                </div>
-                <div class="ui section divider"></div>
+<div class="container">
+    <h1>Recent Talks</h1>
+
+    <ul class="talks-list">
+        <li>
+            <div class="talk-title">Advancing Multimodal LLM Reasoning: A Road to Open Models, Open Science</div>
+            <div class="talk-meta">Dec 2024, Invited talk at Bosch Seminar</div>
+        </li>
+
+        <li>
+            <div class="talk-title">Advancing LLM Reasoning: A Road to Open Models, Open Science</div>
+            <div class="talk-meta">Oct 2024, Invited talk at University of Virginia and George Mason University</div>
+        </li>
+
+        <li>
+            <div class="talk-title">MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark</div>
+            <div class="talk-meta">Sep 2024, Invited talk at Cohere AI</div>
+        </li>
+
+        <li>
+            <div class="talk-title">MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark</div>
+            <div class="talk-meta">Aug 2024, Invited talk at Twelve AI Labs</div>
+        </li>
+
+        <li>
+            <div class="talk-title">MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark</div>
+            <div class="talk-meta">Jun 2024, Invited talk at CVPR 2024 NICE Workshop</div>
+        </li>
+
+        <li>
+            <div class="talk-title">Evaluating and Improving Reasoning Capabilities of Foundation Models</div>
+            <div class="talk-meta">Jun 2024, Invited talk at Tencent AI Lab (Seattle)</div>
+        </li>
+
+        <li>
+            <div class="talk-title">OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement</div>
+            <div class="talk-meta">Apr 2024, Invited talk at UIUC</div>
+        </li>
+
+        <li>
+            <div class="talk-title">Mathematical Reasoning with LLMs</div>
+            <div class="talk-meta">Jan 2024, Invited talk at AI TIME (Online AI Forum organized by Tsinghua University)</div>
+        </li>
+
+        <li>
+            <div class="talk-title">Synthetic Data Generation with Differential Privacy</div>
+            <div class="talk-meta">Jun 2023, Invited talk at Microsoft Research Summit</div>
+        </li>
+
+        <li>
+            <div class="talk-title">Language Modeling with Differential Privacy</div>
+            <div class="talk-meta">Mar 2023, Invited talk at Workshop on Responsible AI hosted by OSU TDAI and University of Tsukuba's Center for AI Research (C-AIR)</div>
+        </li>
+
+        <li>
+            <div class="talk-title">LLMs with Privacy</div>
+            <div class="talk-meta">Mar 2023, Invited talk at AI TIME (Online AI Forum organized by Tsinghua University)</div>
+        </li>
+
+        <li>
+            <div class="talk-title">Data Synthesis: Boosting Utility and Privacy in NLP</div>
+            <div class="talk-meta">Dec 2022, Invited talk at ByteDance</div>
+        </li>
+    </ul>
+</div>
+
 </body>
 </html>
-            

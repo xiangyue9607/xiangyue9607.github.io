@@ -1,78 +1,304 @@
-/*#my-menu a{*/
-	/*padding: 2%;*/
-/*}*/
-
-/*.ui.fitted.menu .item, .ui.fitted.menu .item .menu .item, .ui.menu .fitted.item{*/
-	/*padding: 2em;*/
-/*}*/
-
-/*.ui.top.menu .ui.container {*/
-	/*padding-left: 5%;*/
-	/*padding-right: 5%;*/
-/*}*/
-
-
-.ui.main.text.container {
-	margin-top: 6.0em;
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.ui.circular.image{
-	margin-top: -10%;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
 }
 
-#bio-short {
-	/*display: inline;*/
-	padding: 3% 0 3% 0;
+a {
+    color: #0066cc;
 }
 
-#visit-map {
-	width: 40%;
-	padding-bottom: 3%;
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
-li{
-	padding-top: 0.5%;
-	padding-bottom: 0.5%;
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 1000;
+    padding: 10px 0;
 }
 
-
-.nd-pageheader {
-	padding: 2rem 15px;
-	margin-bottom: -3%;
-	color: #e4f1fe;
-	text-align: center;
-	background-color: #0E2863;
+nav .nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 25px;
 }
 
-.nd-pageheader a {
-	color: #e4f1fe;
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
 }
 
-.nd-pageheader .container {
-	position: relative
+nav a:hover {
+    color: #0066cc;
 }
 
-.nd-pageheader h1 {
-	font-size: 3rem;
-	font-weight: 400;
-	color: #fff
+/* Typography */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
-.nd-pageheader address {
-	margin-top: 2%;
-	font-weight: 300;
-	font-size: 1.2rem;
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
-.nd-pageheader p {
-	margin-bottom: 0;
-	font-size: 2rem;
-	font-weight: 300
+/* Home Page Styles */
+.hero {
+    margin-top: 35px;
+    margin-bottom: 30px;
 }
 
-.textred {
-	color: red;
+.profile-section {
+    display: flex;
+    gap: 25px;
+    align-items: start;
+    margin-bottom: 20px;
 }
 
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
 
+.profile-info h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
 
+.profile-info p {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.intro-statement {
+    font-size: 17px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.professional-summary {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.professional-summary p {
+    margin-bottom: 10px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 15px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Publications Page Styles */
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.subtitle a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.subtitle a:hover {
+    text-decoration: underline;
+}
+
+.note {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.publications-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 12px;
+    padding: 0;
+    background-color: #fff;
+}
+
+.paper-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.paper-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.paper-title a:hover {
+    color: #0066cc;
+}
+
+.paper-authors {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.paper-venue {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.award {
+    color: #C0392B;
+    font-weight: bold;
+}
+
+.paper-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.paper-links img {
+    height: 18px;
+    vertical-align: middle;
+}
+
+.paper-links a {
+    display: inline-block;
+}
+
+/* Simple Lists (for home page) */
+.talks-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.talks-list li {
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.talks-list a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.talks-list a:hover {
+    text-decoration: underline;
+}
+
+/* Talks Page Specific */
+.talk-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.talk-meta {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Teaching Page Styles - Default list styles */
+.container ul:not(.talks-list):not(.publications-list) {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.container li:not(.talks-list li):not(.publications-list li) {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 13px;
+    color: #666;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 40px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav .nav-container {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    .hero {
+        margin-top: 25px;
+    }
+
+    h1 {
+        margin-top: 25px;
+    }
+}

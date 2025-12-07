@@ -1,193 +1,275 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes"
-              name="viewport">
-        <meta charset="utf-8">
-        <title>Xiang Yue's Homepage</title>
-        <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
-        <link rel="manifest" href="images/icon/site.webmanifest">
-        <script src="./stylesheets/jquery.js"></script>
-        <script src="./stylesheets/semantic.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xiang Yue - Publications">
+    <title>Xiang Yue - Publications</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+    <link rel="manifest" href="images/icon/site.webmanifest">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylesheets/styles.css">
+
+    <style>
+    /* Publication-specific overrides */
+    h1 {
+        font-size: 26px;
+        margin-top: 30px;
+        margin-bottom: 12px;
+    }
+    </style>
+</head>
 <body>
 
-<!-- header -->
-<div class="ui fixed inverted menu">
-    <div class="ui container">
-        <a href="index.html" class="description item">Home</a>
-        <a href="publication.html" class="item">Publications</a>
-        <a href="talk.html" class="item">Talks</a>
-        <a href="teaching.html" class="item">Teaching</a>
+<nav>
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="publication.html">Papers</a>
     </div>
+</nav>
+
+<div class="container">
+    <h1>Selected Publications</h1>
+    <div class="subtitle">
+        Full list:
+        <a href="https://scholar.google.com/citations?hl=en&user=4jX_dI8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a>,
+        <a href="https://www.semanticscholar.org/author/Xiang-Yue/145548079" target="_blank">Semantic Scholar</a>
+    </div>
+
+    <p class="note">*: Equal Contributions; ✝: My Advisee</p>
+
+    <ul class="publications-list">
+        <li>
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2507.00432" target="_blank">
+                    Does Math Reasoning Improve General LLM Capabilities? Understanding Transferability of LLM Reasoning
+                </a>
+            </div>
+            <div class="paper-authors">
+                Maggie Huan*✝, Yuetai Li*✝, Tuney Zheng*✝, Xiaoyu Xu, Seungone Kim, Minxin Du, Radha Poovendran, Graham Neubig, <b><u>Xiang Yue</u></b>
+            </div>
+            <div class="paper-venue">arXiv 2025</div>
+            <div class="paper-links">
+                <a href="https://github.com/ReasoningTransfer/Transferability-of-LLM-Reasoning" target="_blank">
+                    <img src="https://img.shields.io/github/stars/ReasoningTransfer/Transferability-of-LLM-Reasoning?style=social" alt="GitHub stars">
+                </a>
+                <a href="https://huggingface.co/ReasoningTransferability" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Checkpoints-FFFFFF" alt="Checkpoints on HF">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2502.03373" target="_blank">Demystifying Long Chain-of-Thought Reasoning in LLMs</a>
+            </div>
+            <div class="paper-authors">
+                Edward Yeo*✝, Yuxuan Tong*✝, Morry Niu, Graham Neubig, <b><u>Xiang Yue</u></b>
+            </div>
+            <div class="paper-venue">
+                ICML 2025<br>
+                (Also <span class="award">🏆Best Paper Award</span> at <a href="https://fm-wild-community.github.io/" target="_blank">ICLR 2025 Workshop on Foundation Models in the Wild</a>)
+            </div>
+            <div class="paper-links">
+                <a href="https://github.com/eddycmu/demystify-long-cot" target="_blank">
+                    <img src="https://img.shields.io/github/stars/eddycmu/demystify-long-cot?style=social" alt="GitHub stars">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2410.16153" target="_blank">Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages</a>
+            </div>
+            <div class="paper-authors">
+                <b><u>Xiang Yue*</u></b>, Yueqi Song*, Akari Asai, Seungone Kim, Jean de Dieu Nyandwi, Simran Khanuja, Anjali Kantharuban, Lintang Sutawika, Sathyanarayanan Ramamoorthy, Graham Neubig
+            </div>
+            <div class="paper-venue">ICLR 2025</div>
+            <div class="paper-links">
+                <a href="https://neulab.github.io/Pangea/" target="_blank">
+                    <img src="https://img.shields.io/badge/🔗%20Project%20Page-FFFFFF" alt="Project Page">
+                </a>
+                <a href="https://huggingface.co/neulab/Pangea-7B" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Checkpoints-FFFFFF" alt="Checkpoints on HF">
+                </a>
+                <a href="https://huggingface.co/datasets/neulab/PangeaInstruct" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF">
+                </a>
+                <a href="https://huggingface.co/spaces/neulab/Pangea" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Demo-FFFFFF" alt="Demo on HF">
+                </a>
+                <a href="https://github.com/neulab/Pangea" target="_blank">
+                    <img src="https://img.shields.io/github/stars/neulab/Pangea?style=social" alt="GitHub stars">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2405.03548" target="_blank">MAmmoTH2: Scaling Instructions from the Web</a>
+            </div>
+            <div class="paper-authors">
+                <b><u>Xiang Yue</u></b>, Tuney Zheng, Ge Zhang, Wenhu Chen
+            </div>
+            <div class="paper-venue">NeurIPS 2024</div>
+            <div class="paper-links">
+                <a href="https://tiger-ai-lab.github.io/MAmmoTH2/" target="_blank">
+                    <img src="https://img.shields.io/badge/🔗%20Project%20Page-FFFFFF" alt="Project Page">
+                </a>
+                <a href="https://huggingface.co/datasets/TIGER-Lab/MAmmoTH2" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF">
+                </a>
+                <a href="https://huggingface.co/models/TIGER-Lab/MAmmoTH2" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Model-FFFFFF" alt="Model on HF">
+                </a>
+                <a href="https://github.com/TIGER-AI-Lab/MAmmoTH2" target="_blank">
+                    <img src="https://img.shields.io/github/stars/TIGER-AI-Lab/MAmmoTH2?style=social" alt="GitHub stars">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2405.15071" target="_blank">Grokked Transformers are Implicit Reasoners: A Mechanistic Journey to the Edge of Generalization</a>
+            </div>
+            <div class="paper-authors">
+                Boshi Wang, <b><u>Xiang Yue</u></b>, Yu Su, Huan Sun
+            </div>
+            <div class="paper-venue">NeurIPS 2024</div>
+            <div class="paper-links">
+                <a href="https://github.com/OSU-NLP-Group/GrokkedTransformer" target="_blank">
+                    <img src="https://img.shields.io/github/stars/OSU-NLP-Group/GrokkedTransformer?style=social" alt="GitHub stars">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">
+                <a href="https://arxiv.org/pdf/2406.01574" target="_blank">MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark</a>
+            </div>
+            <div class="paper-authors">
+                Yubo Wang, Xueguang Ma, Ge Zhang, Yuansheng Ni, Abhranil Chandra, Shiguang Guo, Weiming Ren, Aaran Arulraj, Xuan He, Ziyan Jiang, Tianle Li, Max Ku, Kai Wang, Alex Zhuang, Rongqi Fan, <b><u>Xiang Yue</u></b>, Wenhu Chen
+            </div>
+            <div class="paper-venue">NeurIPS 2024 (<span class="award">Spotlight</span>)</div>
+            <div class="paper-links">
+                <a href="https://huggingface.co/spaces/TIGER-Lab/MMLU-Pro" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Leaderboard-FFFFFF" alt="Leaderboard on HF">
+                </a>
+                <a href="https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF">
+                </a>
+                <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/" target="_blank">
+                    <img src="https://img.shields.io/github/stars/TIGER-AI-Lab/MMLU-Pro?style=social" alt="GitHub stars">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2402.14658" target="_blank">OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement</a>
+            </div>
+            <div class="paper-authors">
+                Tianyu Zheng*✝, Ge Zhang*, Tianhao Shen*, Xueling Liu*, Bill Yuchen Lin, Jie Fu, Wenhu Chen, <b><u>Xiang Yue</u></b>
+            </div>
+            <div class="paper-venue">ACL 2024, Findings</div>
+            <div class="paper-links">
+                <a href="https://opencodeinterpreter.github.io/" target="_blank">
+                    <img src="https://img.shields.io/badge/🔗%20Project%20Page-FFFFFF " alt="Project Page">
+                </a>
+                <a href="https://huggingface.co/m-a-p/OpenCodeInterpreter-DS-6.7B" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Model-FFFFFF" alt="Model on HF">
+                </a>
+                <a href="https://huggingface.co/datasets/m-a-p/Code-Feedback/" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF">
+                </a>
+                <a href="https://github.com/OpenCodeInterpreter/OpenCodeInterpreter" target="_blank">
+                    <img src="https://img.shields.io/github/stars/OpenCodeInterpreter/OpenCodeInterpreter?style=social" alt="GitHub stars">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2311.16502.pdf" target="_blank">MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI</a>
+            </div>
+            <div class="paper-authors">
+                <b><u>Xiang Yue</u></b>, Yuansheng Ni, Kai Zhang, Tianyu Zheng, Ruoqi Liu, Ge Zhang, Samuel Stevens, Dongfu Jiang, Weiming Ren, Yuxuan Sun, Cong Wei, Botao Yu, Ruibin Yuan, Renliang Sun, Ming Yin, Boyuan Zheng, Zhenzhu Yang, Yibo Liu, Wenhao Huang, Huan Sun, Yu Su, Wenhu Chen
+            </div>
+            <div class="paper-venue">CVPR 2024 (<span class="award">🏆 Award Candidate Paper, Oral: 24/11,532=0.2%</span>)</div>
+            <div class="paper-links">
+                <a href="https://mmmu-benchmark.github.io/" target="_blank">
+                    <img src="https://img.shields.io/badge/🔗%20Project%20Page-FFFFFF" alt="Project Page">
+                </a>
+                <a href="https://huggingface.co/datasets/MMMU/MMMU" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF">
+                </a>
+                <a href="./pdf/MMMU_poster.pdf" target="_blank">
+                    <img src="https://img.shields.io/badge/📄%20Poster-FFFFFF" alt="Poster">
+                </a>
+                <a href="./pdf/MMMU_CVPR2024.pdf" target="_blank">
+                    <img src="https://img.shields.io/badge/📊%20Slides-FFFFFF" alt="Slides">
+                </a>
+                <a href="https://github.com/MMMU-Benchmark/MMMU" target="_blank">
+                    <img src="https://img.shields.io/github/stars/MMMU-Benchmark/MMMU?style=social" alt="GitHub stars">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2409.02813" target="_blank">MMMU-Pro: A more robust multi-discipline multimodal understanding benchmark</a>
+            </div>
+            <div class="paper-authors">
+                <b><u>Xiang Yue*</u></b>, Tianyu Zheng*, Yuansheng Ni*, Yubo Wang, Kai Zhang, Shengbang Tong, Yuxuan Sun, Botao Yu, Ge Zhang, Huan Sun, Yu Su, Wenhu Chen, Graham Neubig
+            </div>
+            <div class="paper-venue">ACL 2025</div>
+        </li>
+
+        <li>
+            <div class="paper-title">
+                <a href="https://arxiv.org/pdf/2309.05653.pdf" target="_blank">MAmmoTH: Building Math Generalist Models through Hybrid Instruction Tuning</a>
+            </div>
+            <div class="paper-authors">
+                <b><u>Xiang Yue*</u></b>, Xingwei Qu*, Ge Zhang, Yao Fu, Wenhao Huang, Huan Sun, Yu Su, Wenhu Chen*
+            </div>
+            <div class="paper-venue">ICLR 2024 (<span class="award">Spotlight</span>)</div>
+            <div class="paper-links">
+                <a href="https://tiger-ai-lab.github.io/MAmmoTH/" target="_blank">
+                    <img src="https://img.shields.io/badge/🔗%20Project%20Page-FFFFFF" alt="Project Page">
+                </a>
+                <a href="https://huggingface.co/TIGER-Lab/MAmmoTH-Coder-7B" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Model-FFFFFF" alt="Model on HF">
+                </a>
+                <a href="https://huggingface.co/datasets/TIGER-Lab/MathInstruct" target="_blank">
+                    <img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF">
+                </a>
+                <a href="https://github.com/TIGER-AI-Lab/MAmmoTH" target="_blank">
+                    <img src="https://img.shields.io/github/stars/TIGER-AI-Lab/MAmmoTH?style=social" alt="GitHub stars">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2210.14348" target="_blank">Synthetic Text Generation with Differential Privacy: A Simple and Practical Recipe</a>
+            </div>
+            <div class="paper-authors">
+                <b><u>Xiang Yue</u></b>, Huseyin A. Inan, Xuechen Li, Girish Kumar, Julia McAnallen, Hoda Shajari, Huan Sun, David Levitan, Robert Sim
+            </div>
+            <div class="paper-venue">ACL 2023 (<span class="award">🏆 Best Paper Honorable Mention</span>)</div>
+            <div class="paper-links">
+                <a href="https://github.com/microsoft/dp-transformers" target="_blank">
+                    <img src="https://img.shields.io/github/stars/microsoft/dp-transformers?style=social" alt="GitHub stars">
+                </a>
+            </div>
+        </li>
+    </ul>
 </div>
-		<div class="ui main text container">
-            <div class="ui huge header">Selected Publications</div>
-            Full list: <a href="https://scholar.google.com/citations?hl=en&user=4jX_dI8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">(Google
-            Scholar)</a>,
-            <a href="https://www.semanticscholar.org/author/Xiang-Yue/145548079" target="_blank">(Semantic Scholar)</a>
-            <div class="ui section divider"></div>
-			<div class="ui top attached">
-
-				<div class="content">
-                    <p>*: Equal Contributions; ✝: My Advisee</p>
-                    <ul>
-                        <li>
-                            <a href="https://arxiv.org/abs/2507.00432" target="_blank">
-                                Does Math Reasoning Improve General LLM Capabilities? Understanding Transferability of LLM Reasoning
-                            </a><br>
-                            Maggie Huan*✝, Yuetai Li*✝, Tuney Zheng*✝, Xiaoyu Xu, Seungone Kim, Minxin Du, Radha Poovendran, Graham Neubig, <b><u>Xiang Yue</u></b><br>
-                            <i>arXiv 2025</i><br>
-                        <!-- GitHub badge -->
-                        <a href="https://github.com/ReasoningTransfer/Transferability-of-LLM-Reasoning" target="_blank">
-                            <img src="https://img.shields.io/github/stars/ReasoningTransfer/Transferability-of-LLM-Reasoning?style=social" alt="GitHub stars">
-                        </a>
-                        <!-- Hugging Face badge -->
-                         <a href="https://huggingface.co/ReasoningTransferability" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Checkpoints-FFFFFF" alt="Checkpoints on HF"></a>
-                        
-                        </a>
-                    </p>
-                </li>
-                        <li>
-                            <p style="background-color: #FFFFE0; padding: 10px; border-radius: 5px;">
-                                <a href="https://arxiv.org/abs/2502.03373" target="_blank"> Demystifying Long Chain-of-Thought Reasoning in LLMs</a><br>
-                                Edward Yeo*✝, Yuxuan Tong*✝, Morry Niu, Graham Neubig, <b><u>Xiang Yue</u></b><br>
-                                <i>ICML 2025</i><br>
-				    (Also 🏆Best Paper Award at <a href="https://fm-wild-community.github.io/">ICLR 2025 Workshop on
-Foundation Models in the Wild</a>)<br>
-                                <a href="https://github.com/eddycmu/demystify-long-cot" target="_blank"><img src="https://img.shields.io/github/stars/eddycmu/demystify-long-cot?style=social" alt="GitHub stars"></a>
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                <a href="https://arxiv.org/abs/2410.16153" target="_blank">Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages</a><br>
-                                <b><u>Xiang Yue*</u></b>, Yueqi Song*, Akari Asai, Seungone Kim, Jean de Dieu Nyandwi, Simran Khanuja, Anjali Kantharuban, Lintang Sutawika, Sathyanarayanan Ramamoorthy, Graham Neubig<br>
-                                <i>ICLR 2025</i><br>
-                                <a href="https://neulab.github.io/Pangea/" target="_blank"><img src="https://img.shields.io/badge/🔗%20Project%20Page-FFFFFF" alt="Project Page"></a>
-                                <a href="https://huggingface.co/neulab/Pangea-7B" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Checkpoints-FFFFFF" alt="Checkpoints on HF"></a>
-                                <a href="https://huggingface.co/datasets/neulab/PangeaInstruct" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF"></a>
-                                <a href="https://huggingface.co/spaces/neulab/Pangea" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Demo-FFFFFF" alt="Demo on HF"></a>
-                                <a href="https://github.com/neulab/Pangea" target="_blank"><img src="https://img.shields.io/github/stars/neulab/Pangea?style=social" alt="GitHub stars"></a>
-                            </p>
-                        </li>
-
-                        
-                        <li>
-                            <p style="background-color: #FFFFE0; padding: 10px; border-radius: 5px;">
-                                <a href="https://arxiv.org/abs/2405.03548" target="_blank">MAmmoTH2: Scaling Instructions from the Web</a><br>
-                                <b><u>Xiang Yue</u></b>, Tuney Zheng, Ge Zhang, Wenhu Chen<br>
-                                <i>NeurIPS 2024</i><br>
-                                <a href="https://tiger-ai-lab.github.io/MAmmoTH2/" target="_blank"><img src="https://img.shields.io/badge/🔗%20Project%20Page-FFFFFF" alt="Project Page"></a>
-                                <a href="https://huggingface.co/datasets/TIGER-Lab/MAmmoTH2" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF"></a>
-                                <a href="https://huggingface.co/models/TIGER-Lab/MAmmoTH2" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Model-FFFFFF" alt="Model on HF"></a>
-                                <a href="https://github.com/TIGER-AI-Lab/MAmmoTH2" target="_blank"><img src="https://img.shields.io/github/stars/TIGER-AI-Lab/MAmmoTH2?style=social" alt="GitHub stars"></a>
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                <a href="https://arxiv.org/abs/2405.15071" target="_blank">Grokked Transformers are Implicit Reasoners: A Mechanistic Journey to the Edge of Generalization</a><br>
-                                Boshi Wang, <b><u>Xiang Yue</u></b>, Yu Su, Huan Sun<br>
-                                <i>NeurIPS 2024</i><br>
-                                <a href="https://github.com/OSU-NLP-Group/GrokkedTransformer" target="_blank"><img src="https://img.shields.io/github/stars/OSU-NLP-Group/GrokkedTransformer?style=social" alt="GitHub stars"></a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <!-- MMLU-Pro -->
-                                <a href="https://arxiv.org/pdf/2406.01574" target="_blank">MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark
-                                </a><br>
-                                Yubo Wang, Xueguang Ma, Ge Zhang, Yuansheng Ni, Abhranil Chandra, Shiguang Guo, Weiming Ren, Aaran Arulraj, Xuan He, Ziyan Jiang, Tianle Li, Max Ku, Kai Wang, Alex Zhuang, Rongqi Fan, <b><u>Xiang Yue</u></b>, Wenhu Chen
-                                <br>
-                                <i>NeurIPS 2024 (<span style="color: #C0392B; font-weight: bold;">Spotlight</span>)</i><br>
-                                <a href="https://huggingface.co/spaces/TIGER-Lab/MMLU-Pro" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Leaderboard-FFFFFF" alt="Leaderboard on HF"></a>
-                                <a href="https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF"></a>
-                                <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/" target="_blank"><img src="https://img.shields.io/github/stars/TIGER-AI-Lab/MMLU-Pro?style=social" alt="GitHub stars"></a>
-                                
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                <a href="https://arxiv.org/abs/2402.14658" target="_blank">
-                                    OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement
-                                </a><br>
-                                Tianyu Zheng*✝, Ge Zhang*, Tianhao Shen*, Xueling Liu*, Bill Yuchen Lin, Jie Fu, Wenhu Chen, <b><u>Xiang Yue</u></b><br>
-                                <i>ACL 2024, Findings</i><br>
-                                    <a href="https://opencodeinterpreter.github.io/" target="_blank">
-                                        <img src="https://img.shields.io/badge/🔗%20Project%20Page-FFFFFF " alt="Project Page">
-                                    </a>
-                                    <a href="https://huggingface.co/m-a-p/OpenCodeInterpreter-DS-6.7B" target="_blank">
-                                        <img src="https://img.shields.io/badge/🤗%20HF%20Model-FFFFFF" alt="Model on HF">
-                                    </a>
-                                    <a href="https://huggingface.co/datasets/m-a-p/Code-Feedback/" target="_blank">
-                                        <img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF">
-                                    </a>
-                                    <a href="https://github.com/OpenCodeInterpreter/OpenCodeInterpreter" target="_blank">
-                                        <img src="https://img.shields.io/github/stars/OpenCodeInterpreter/OpenCodeInterpreter?style=social" alt="GitHub stars">
-                                    </a>
-                        </li>
-                        
-
-                        
-                        <li>
-                            <p style="background-color: #FFFFE0; padding: 10px; border-radius: 5px;">
-                                <a href="https://arxiv.org/abs/2311.16502.pdf" target="_blank"><b>🔥 MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI</a></b><br>
-                                <b><u>Xiang Yue</u></b>, Yuansheng Ni, Kai Zhang, Tianyu Zheng, Ruoqi Liu, Ge Zhang, Samuel Stevens, Dongfu Jiang, Weiming Ren, Yuxuan Sun, Cong Wei, Botao Yu, Ruibin Yuan, Renliang Sun, Ming Yin, Boyuan Zheng, Zhenzhu Yang, Yibo Liu, Wenhao Huang, Huan Sun, Yu Su, Wenhu Chen<br>
-                                <i><b>CVPR 2024 (<span style="color: #C0392B; font-weight: bold;">🏆 Award Candidate Paper, Oral: 24/11,532=0.2%</span>)</i></b><br>
-                                <a href="https://mmmu-benchmark.github.io/" target="_blank"><img src="https://img.shields.io/badge/🔗%20Project%20Page-FFFFFF" alt="Project Page"></a>
-                                <a href="https://huggingface.co/datasets/MMMU/MMMU" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF"></a>
-                                <a href="./pdf/MMMU_poster.pdf" target="_blank"><img src="https://img.shields.io/badge/📄%20Poster-FFFFFF" alt="Poster"></a>
-                                <a href="./pdf/MMMU_CVPR2024.pdf" target="_blank"><img src="https://img.shields.io/badge/📊%20Slides-FFFFFF" alt="Slides"></a>
-                                <a href="https://github.com/MMMU-Benchmark/MMMU" target="_blank"><img src="https://img.shields.io/github/stars/MMMU-Benchmark/MMMU?style=social" alt="GitHub stars"></a>
-                                <br>
-
-                                <a href="https://arxiv.org/abs/2409.02813" target="_blank"><b>MMMU-Pro: A more robust multi-discipline multimodal understanding benchmark</b></a><br>
-                                <b><u>Xiang Yue*</u></b>, Tianyu Zheng*, Yuansheng Ni*, Yubo Wang, Kai Zhang, Shengbang Tong, Yuxuan Sun, Botao Yu, Ge Zhang, Huan Sun, Yu Su, Wenhu Chen, Graham Neubig <br>
-                                <i><b>ACL 2025</b></i>
-                                </p>
-                        </li>
-                        
-                        <li>
-                            <p style="background-color: #FFFFE0; padding: 10px; border-radius: 5px;">
-                                <a href="https://arxiv.org/pdf/2309.05653.pdf" target="_blank">MAmmoTH: Building Math Generalist Models through Hybrid Instruction Tuning</a><br>
-                                <b><u>Xiang Yue*</u></b>, Xingwei Qu, Ge Zhang, Yao Fu, Wenhao Huang, Huan Sun, Yu Su, Wenhu Chen*<br>
-                                <i><b>ICLR 2024 (<span style="color: #C0392B; font-weight: bold;">Spotlight</span>)</i></b><br>
-                                <a href="https://tiger-ai-lab.github.io/MAmmoTH/" target="_blank"><img src="https://img.shields.io/badge/🔗%20Project%20Page-FFFFFF" alt="Project Page"></a>
-                                <a href="https://huggingface.co/TIGER-Lab/MAmmoTH-Coder-7B" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Model-FFFFFF" alt="Model on HF"></a>
-                                <a href="https://huggingface.co/datasets/TIGER-Lab/MathInstruct" target="_blank"><img src="https://img.shields.io/badge/🤗%20HF%20Dataset-FFFFFF" alt="Dataset on HF"></a>
-                                <a href="https://github.com/TIGER-AI-Lab/MAmmoTH" target="_blank"><img src="https://img.shields.io/github/stars/TIGER-AI-Lab/MAmmoTH?style=social" alt="GitHub stars"></a>
-                            </p>
-                        </li>
-                         
-                        
-                        <li>
-                            <p style="background-color: #FFFFE0; padding: 10px; border-radius: 5px;">
-                                <a href="https://arxiv.org/abs/2210.14348" target="_blank">Synthetic Text Generation with Differential Privacy: A Simple and Practical Recipe</a><br>
-                                <b><u>Xiang Yue</u></b>, Huseyin A. Inan, Xuechen Li, Girish Kumar, Julia McAnallen, Hoda Shajari, Huan Sun, David Levitan, Robert Sim<br>
-                                <i><b>ACL 2023</b> (<span style="color: #C0392B; font-weight: bold;">🏆 Best Paper Honorable Mention</span>)</i><br>
-                                <a href="https://github.com/microsoft/dp-transformers" target="_blank"><img src="https://img.shields.io/github/stars/microsoft/dp-transformers?style=social" alt="GitHub stars"></a>
-                            </p>
-                        </li>
-                        
-
-					</ul>
-
-					<hr>
-
-
-
-				</div>
-
-			</div>
-
-		</div>
-        <div class="ui section divider"></div>
 
 </body>
 </html>
