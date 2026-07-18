@@ -241,6 +241,13 @@ h2 {
     text-decoration: underline;
 }
 
+.meta-ai-icon {
+    height: 16px;
+    width: 16px;
+    vertical-align: text-bottom;
+    margin-right: 4px;
+}
+
 /* Talks Page Specific */
 .talk-title {
     font-size: 16px;
